@@ -18,22 +18,43 @@ npm install -g @angular/cli
 npm uninstall -g @angular/cli
 ng version
 ng v
---
-## Angular Başlat
 ng new tech-angular-app
 cd tech-angular-app
 ng serve -o
 
 ng serve --port 999 -o
 
+## Angular CLI Hazır Bileşenler
+ng generate component login = ng g c login
+ng g pipe loginPipe
+ng g service loginService
+ng g module loginModule
+ng g directive loginDirective
+ng g interface loginInterface
+ng g enum loginEnum
+
+## 3.Parti Uygulamalar Ekle
+### Fontawesome
+(Terminal) => npm i font-awesome
+angular.json =>"node_modules/font-awesome/css/font-awesome.css"
+### Bootstrap
+(Terminal) => npm i bootstrap
+angular.json => "styles": [
+              "src/styles.css",
+               "node_modules/font-awesome/css/font-awesome.css",
+               "node_moodules/bootstrap/dist/css/bootstrap.min.css"
+            ],
+### jQuery
+(Terminal) => npm i jquery
+angular.json =>
+              "scripts": [
+              "node_modules/jquery/dist/jquery.min.js",
+              "node_modules/bootstrap/dist/js/bootstrap.min.js"
+            ], 
 
 
 
-
-
-
-
-
+            
 
 
 
