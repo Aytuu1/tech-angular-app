@@ -1,3 +1,45 @@
+## Angular & TypeScript
+[Angular Github]()
+
+## Git Kurulumu
+git -v
+npm -v
+git config --global user.name "Aytuğ Atasever"
+git config --global user.email "aytuuc1@gmail.com"
+
+
+## Node JS
+npm list
+npm list -g
+
+## Angular Kurulum
+npm install -g typescript
+npm install -g @angular/cli
+npm uninstall -g @angular/cli
+ng version
+ng v
+--
+## Angular Başlat
+ng new tech-angular-app
+cd tech-angular-app
+ng serve -o
+
+ng serve --port 999 -o
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # TechAngularApp
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.4.
