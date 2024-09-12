@@ -1,5 +1,5 @@
 ## Angular & TypeScript
-[Angular Github](https://github.com/Aytuu1/tech-angular-app)
+[Angular Github](https://github.com/Aytuu1/tech-angular-app) 
 
 ## Git Kurulumu
 git -v
