@@ -33,7 +33,13 @@ ng g directive loginDirective
 ng g interface loginInterface
 ng g enum loginEnum
 
-## 3.Parti Uygulamalar Ekle
+## NPM install Ekle(3.libraries)
+npm i font-awesome
+npm i jquery
+npm i jquery
+npm i -g nodemon
+npm i bootstrap
+
 ### Fontawesome
 (Terminal) => npm i font-awesome
 angular.json =>"node_modules/font-awesome/css/font-awesome.css"
@@ -52,11 +58,19 @@ angular.json =>
               "node_modules/bootstrap/dist/js/bootstrap.min.js"
             ], 
 
+### TypeScript
+- (TypeScrip' de bir değişiklik olduğunda otomatik olarak derleme yapsın)
+npm i -g nodemon
 
+1:YOL      
+tsc TypeScriptTutorial.ts
+tsc --watch TypeScriptTutorial.ts
+"nodemon":"nodemon -q typescript/TypeScriptTutorial.js",
 
-            
-
-
+2:YOL
+    "tsc_nodemon":" tsc --watch nodemon  typescript/TypeScriptTutorial.ts && nodemon -q typescript/TypeScriptTutorial.js"
+    
+npm run tsc_nodemon
 
 
 
