@@ -6,6 +6,7 @@ import { BlogMainComponent } from '../blog-main/blog-main.component';
 import { BlogFooterComponent } from '../blog-footer/blog-footer.component';
 import { ContentComponent } from '../content/content.component';
 import { BlogNavbarComponent } from '../blog-navbar/blog-navbar.component';
+import { BlogAboutComponent } from '../blog-about/blog-about.component';
 
 @Component({
   selector: 'app-root',
@@ -18,6 +19,7 @@ import { BlogNavbarComponent } from '../blog-navbar/blog-navbar.component';
     ,BlogFooterComponent
     ,ContentComponent
     ,BlogNavbarComponent
+    ,BlogAboutComponent
   ],
   templateUrl: './app.component.html',
   styleUrl: './../styles.css'

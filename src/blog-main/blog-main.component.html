@@ -1,1 +1,39 @@
-<p>blog-main works!</p>
+
+<ng-container *ngIf="blogCard; then blog; else noBlogCard"></ng-container>
+
+
+
+<ng-template #blog>
+<div class="container mt-3 mb-4">
+    <div class="row">
+        <div class="col-sm-12 col-md-3 col-lg-4" *ngFor="let item of blogCard">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title text-center">{{item.header | uppercase}}</h5>
+                    <img  class="card-img-top" [src]="item.picture" alt="resim yok">
+                    <p class="card-text">{{item.text}}</p>
+                    <a (click)="detailPage()" href="#" class="btn btn-primary">Tıkla</a>
+                    <span style="float: right; color:cadetblue; display: block;">{{item.date | date:"dd MMM yyyy"}}  </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</ng-template>
+
+<ng-template #noBlogCard>
+    <form>
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-8">
+            <input type="text" title="Blog ara" placeholder="Aranacak Kelimeyi giriniz.." class="form-control">
+            <div class="col-md-2">
+                <button class="btn btn-primary">
+                    Blog Ara
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+    </form>
+</ng-template>

@@ -20,7 +20,11 @@ body{
     color:var(--blog_color);
 }
 p{
-color:blue;
+    text-align: justify;
+
+}
+p:hover{
+    text-shadow: 0.5px 1px 0.4px rgb(0, 0, 0, 0.8);
 }
 ul{
     list-style: none;
